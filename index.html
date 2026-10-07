@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keagan Krauss | Data Analyst</title>
+<meta name="description" content="Keagan Krauss, data analyst with more than a decade of design experience. Projects, design work, and background.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="wordmark">Keagan <span>Krauss</span></a>
+    <nav class="site-nav">
+      <a href="#projects">Projects</a>
+      <a href="#design">Design</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <p class="hero-eyebrow">Data Analyst · Lisbon</p>
+        <h1 class="hero-name">Keagan<span>Krauss</span></h1>
+        <div class="hero-side">
+          <p class="hero-lede">
+            I spent more than a decade making complex information
+            legible. Now I'm doing it with data instead of pixels.
+          </p>
+          <hr class="hairline">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="section-eyebrow">Selected Work</p>
+
+      <div class="project-list">
+
+        <article class="project-card" id="met-analysis">
+          <div class="project-meta">
+            <span class="index">01</span>
+            Museum data · Diversity
+          </div>
+          <div>
+            <h2 class="project-title">Closing the Gap: Met vs. MoMA</h2>
+            <p class="project-desc">
+              The Met has pledged to fill its Tang Wing, opening in 2030, with work by long-underrepresented artists. Benchmarking its Modern art acquisitions against MoMA, the expected gap did not appear: 17.1% of the Met's acquisitions are by non-Western artists, against 12.9% at MoMA, and in the 2010s the Met led the shift, 30.3% to 23.6%. Built from both museums' open collection data, with charts in the Met's own red and slate.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Web Scraping</li>
+              <li>Data Visualization</li>
+            </ul>
+            <a class="project-link" href="https://github.com/kraussk9/Met-Strategic-Acquisition-Analysis" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card" id="spotify-predictor">
+          <div class="project-meta">
+            <span class="index">02</span>
+            Machine learning · Music
+          </div>
+          <div>
+            <h2 class="project-title">Spotify Hit Predictor</h2>
+            <p class="project-desc">
+              Can a song's audio features alone predict a hit, with no artist fame or chart history? On 80,293 cleaned tracks (12% labeled hits), a Random Forest with SMOTE reached an F1 of 0.53 and nearly doubled recall, from 32% to 55%. Instrumentalness and acousticness outranked danceability as predictors. Along the way I caught a data leakage bug that had inflated cross-validation to 0.87, and fixed it with a pipeline.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>scikit-learn</li>
+              <li>Classification</li>
+              <li>SMOTE</li>
+            </ul>
+            <a class="project-link" href="https://github.com/kraussk9/spotify-hit-predictor" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card" id="vanguard-redesign">
+          <div class="project-meta">
+            <span class="index">03</span>
+            A/B testing · Product
+          </div>
+          <div>
+            <h2 class="project-title">Vanguard Digital Redesign: A/B Test Analysis</h2>
+            <p class="project-desc">
+              Vanguard needed to know whether a redesigned interface with
+              in-context prompts would get more clients to finish a key
+              process without adding friction. Across a three-month
+              experiment with 50,487 clients, the new design lifted
+              completion from 49.6% to 58.4%, clearing Vanguard's 5-point
+              threshold, and cut median completion time from 4.57 to 4.18
+              minutes. Drop-off peaked at the step 2 to step 3 transition.
+              On this four-person team project, I handled the data
+              cleaning, the hypothesis tests, and the deck for completion
+              rate, median completion time, and time spent per step.
+            </p>
+            <ul class="project-tags">
+              <li>A/B Testing</li>
+              <li>Python</li>
+              <li>Hypothesis Testing</li>
+              <li>Data Cleaning</li>
+            </ul>
+            <a class="project-link" href="https://github.com/mocihu-source/Week-5-6-Project--EDA-and-Inferential-Stats" target="_blank" rel="noopener">View original team repo →</a>
+          </div>
+        </article>
+
+        <article class="project-card" id="scifi-capstone">
+          <div class="project-meta">
+            <span class="index">04</span>
+            Capstone · Media trends
+          </div>
+          <div>
+            <h2 class="project-title">Page to Screen: Sci-Fi Books vs. Streaming</h2>
+            <p class="project-desc">
+              Is streaming sci-fi tracking what's being published, or running on its own agenda? This open-data stand-in for literary scouting compares about 14,700 books with 4,105 films and shows across 11 themes on one timeline. For themes like dystopia, cyberpunk, and space opera, screen commissioning led publishing by one to three years, and just 8.4% of commissioned titles were book adaptations. Findings are explored in an interactive Streamlit dashboard.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Streamlit</li>
+              <li>TMDb API</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/kraussk9/page-to-screen" target="_blank" rel="noopener">View on GitHub →</a>
+              <a class="project-link" href="https://page-to-screen.streamlit.app/" target="_blank" rel="noopener">View live dashboard →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DESIGN ========== -->
+  <section id="design">
+    <div class="wrap">
+      <p class="section-eyebrow">Design Work</p>
+
+      <article class="design-card" data-project="bolt">
+        <div class="media-frame">
+          <img src="images/boltbillboard.jpg" alt="Bolt billboard campaign">
+        </div>
+        <div>
+          <p class="design-meta"><span class="index">01</span> Payments · Brand &amp; Marketing</p>
+          <h3 class="project-title">Bolt</h3>
+          <p class="project-desc">
+            Checkout at the speed of a click. Work has included web,
+            digital collateral, illustration, social collateral, print
+            media for events, sales booths, out of home, and a complete
+            visual overhaul of a 670-page website.
+          </p>
+        </div>
+      </article>
+
+      <article class="design-card" data-project="kargo">
+        <div class="media-frame">
+          <img src="images/kargosignage.jpg" alt="Kargo dock signage and product work">
+        </div>
+        <div>
+          <p class="design-meta"><span class="index">02</span> Logistics · Brand &amp; Product</p>
+          <h3 class="project-title">Kargo</h3>
+          <p class="project-desc">
+            Tasked with a significant digital overhaul and repositioning
+            of their website, along with day-to-day work across
+            collateral, technical illustrations, event marketing
+            materials, sales booth design, ebooks, sales decks, and other
+            digital marketing materials for the supply chain space.
+          </p>
+        </div>
+      </article>
+
+      <article class="design-card" data-project="ordergroove">
+        <div class="media-frame">
+          <img src="images/ordergroovewebsite.jpg" alt="Ordergroove website design">
+        </div>
+        <div>
+          <p class="design-meta"><span class="index">03</span> E-commerce · Brand &amp; Web</p>
+          <h3 class="project-title">Ordergroove</h3>
+          <p class="project-desc">
+            Tasked with an overhaul of Ordergroove's entire digital and
+            print presence, including typography, website, color wheel
+            expansion, and fresh approaches to collateral design: sales
+            decks, signage, one-sheets, and other marketing materials.
+          </p>
+        </div>
+      </article>
+
+      <article class="design-card" data-project="campaigns">
+        <div class="media-frame">
+          <img src="images/madfishbillboard.jpg" alt="Mad Fish prosecco billboard campaign">
+        </div>
+        <div>
+          <p class="design-meta"><span class="index">04</span> Campaigns · Apps · Web</p>
+          <h3 class="project-title">Campaigns &amp; Digital</h3>
+          <p class="project-desc">
+            Campaign, web, and app work, from a prosecco launch for Mad
+            Fish to a student-athlete mental health campaign, the Sci Fi
+            Cinema website, and the Pipspeak and MyFamiliar apps.
+          </p>
+        </div>
+      </article>
+
+      <article class="design-card" data-project="illustration">
+        <div class="media-frame">
+          <img src="images/donateinvitation.jpg" alt="Illustrated Donate invitation">
+        </div>
+        <div>
+          <p class="design-meta"><span class="index">05</span> Illustration · Posters · Identity</p>
+          <h3 class="project-title">Illustration</h3>
+          <p class="project-desc">
+            Selected illustration, poster, and identity work, including
+            award-winning pieces: Midsommar, Angkor Wat, and the Donate
+            invitation.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="wrap">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title" style="max-width: 16ch;">A different kind of data analyst</h2>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p class="pull-quote">
+            What more than a decade in design actually taught me wasn't
+            software, it was how to make complexity legible. Visual hierarchy is the same
+            problem as a good chart: what does the eye need to see first?
+            UX research is the same problem as stakeholder interviews:
+            what does this person actually need to decide? A design
+            system is the same problem as a clean analysis: structure
+            that holds up under pressure.
+          </p>
+
+          <p>
+            Agency work for tech clients taught me to start with the
+            question behind the brief. Whether it was a website, a sales
+            deck, or a campaign, the job was to work out what it actually
+            had to do for the people using it, then rebuild it until it
+            did. It's the same first move as any analysis: what decision
+            is this for? Working on a team that overhauled a 670-page
+            website added a second habit, consistency at scale, which is
+            what clean, documented data work depends on.
+          </p>
+          <p>
+            Since the Ironhack Data Analytics bootcamp in Lisbon, I've
+            taken business questions from raw data to a clear answer,
+            using Python, statistics, and interactive dashboards. Projects
+            include a team A/B analysis of a redesigned Vanguard interface
+            (completion up from 49.6% to 58.4% across 50,487 clients), a
+            solo benchmark of the Met against MoMA, and a dashboard
+            tracing how sci-fi publishing trends reach the screen.
+          </p>
+          <p>
+            Today, I bring a designer's eye to every project: not just
+            "is this analysis correct," but "can the person who needs this
+            actually understand it in ten seconds." That's the gap most
+            data work misses, and it's the one I was trained for long
+            before I wrote my first line of Python. I'm looking for an
+            analyst role where that last mile counts.
+          </p>
+        </div>
+
+        <div class="skills-panel">
+          <div class="skills-group">
+            <p class="skills-group-label">Design &amp; Visualization</p>
+            <ul class="skills-tags">
+              <li>Data Visualization</li>
+              <li>Information Design</li>
+              <li>Visual Hierarchy</li>
+              <li>Figma</li>
+              <li>Tableau</li>
+              <li>matplotlib</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">UX &amp; Research</p>
+            <ul class="skills-tags">
+              <li>User Research</li>
+              <li>Service Design</li>
+              <li>Prototyping</li>
+              <li>Stakeholder Interviews</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Data &amp; Analysis</p>
+            <ul class="skills-tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>numpy</li>
+              <li>Jupyter</li>
+              <li>SQL</li>
+              <li>SQL-Python Integration</li>
+              <li>Web Scraping</li>
+              <li>APIs</li>
+              <li>Streamlit</li>
+              <li>EDA</li>
+              <li>A/B Testing</li>
+              <li>KPI Design</li>
+              <li>Customer Segmentation</li>
+              <li>Statistical Analysis</li>
+              <li>Data Cleaning</li>
+              <li>Revenue Analytics</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Machine Learning</p>
+            <ul class="skills-tags">
+              <li>scikit-learn</li>
+              <li>Classification</li>
+              <li>Regression</li>
+              <li>Decision Trees</li>
+              <li>KNN</li>
+              <li>Ensemble Methods</li>
+              <li>Feature Engineering</li>
+              <li>Hyperparameter Tuning</li>
+              <li>Model Evaluation</li>
+              <li>Imbalanced Datasets</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Branding &amp; Identity</p>
+            <ul class="skills-tags">
+              <li>Creative Direction</li>
+              <li>Brand Strategy</li>
+              <li>Identity Systems</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Tools</p>
+            <ul class="skills-tags">
+              <li>MySQL</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-eyebrow">Recognition</p>
+      <h2 class="section-title">Awards &amp; honors, 2021–2022</h2>
+      <ul class="recognition-list">
+        <li>
+          <span class="year">2022</span>
+          <span>
+            <span class="award-name">National ADDY Award: Midsommar Poster</span>
+            <span class="award-org">American Advertising Federation · also Gold, The Advertising Club of New Orleans · Silver, AAF District 7</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2021</span>
+          <span>
+            <span class="award-name">National Silver ADDY Award: Donate Invitation</span>
+            <span class="award-org">American Advertising Federation · also Gold, AAF District 7 · Gold and Best of Special Event, The Advertising Club of New Orleans</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2022</span>
+          <span>
+            <span class="award-name">Gold ADDY Award: Angkor Wat Travel Poster</span>
+            <span class="award-org">The Advertising Club of New Orleans</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2021</span>
+          <span>
+            <span class="award-name">Gold ADDY Award: Sci Fi Cinema Website</span>
+            <span class="award-org">The Advertising Club of New Orleans</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2022</span>
+          <span>
+            <span class="award-name">Silver ADDY Award: Student Athlete Mental Health Awareness Campaign</span>
+            <span class="award-org">The Advertising Club of New Orleans · also Silver, AAF District 7</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2021</span>
+          <span>
+            <span class="award-name">Silver ADDY Awards: Pipspeak App Logo; Avant Garde Font Film Poster</span>
+            <span class="award-org">The Advertising Club of New Orleans</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2021</span>
+          <span>
+            <span class="award-name">Tulane 34 Award</span>
+            <span class="award-org">Tulane University: among the most coveted university-wide honors a graduate can receive, recognizing exemplary leadership, service, and academic excellence</span>
+          </span>
+        </li>
+        <li>
+          <span class="year">2021</span>
+          <span>
+            <span class="award-name">Theta Chapter of Alpha Sigma Lambda Honor Society</span>
+            <span class="award-org">Recognized for academic achievement and leadership</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2 class="section-title">Looking for an analyst who makes data legible? <span class="highlight">Let's talk!</span></h2>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:kraussk9@gmail.com">
+            <span class="value">kraussk9@gmail.com</span>
+            <span class="label">Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/keaganbkrauss" target="_blank" rel="noopener">
+            <span class="value">LinkedIn</span>
+            <span class="label">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kraussk9" target="_blank" rel="noopener">
+            <span class="value">GitHub</span>
+            <span class="label">Code</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Keagan Krauss</span>
+    <span>Data Analytics · Design</span>
+  </div>
+</footer>
+
+<!-- ========== PROJECT MODAL ========== -->
+<div class="modal-overlay" id="project-modal" hidden>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-carousel">
+      <button class="carousel-prev" id="carousel-prev" aria-label="Previous image">&#8249;</button>
+      <div class="carousel-track">
+        <img class="carousel-image" id="carousel-image" src="" alt="">
+      </div>
+      <button class="carousel-next" id="carousel-next" aria-label="Next image">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="carousel-dots"></div>
+    <div class="modal-body">
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-desc" id="modal-desc"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ---- Add more images to any project by adding filenames to its
+  // ---- images array below. First image in the array shows first.
+  const projectData = {
+    bolt: {
+      title: "Bolt",
+      desc: "Checkout at the speed of a click. It takes about 50 milliseconds for a click to be performed, and in that brief glimpse of time an entire world comes alive. A database has been updated, a ticket has been created, an order is processed. All in a single click. Bolt's shockingly simple checkout means fewer abandoned carts, and more lightning-fast shopping. Every element of the final system reflects the speed of the product, resulting in a brand that's Bolt by name, and bolt by nature.\n\nWork has included web, digital collateral, illustration, social collateral, print media for events, sales booths, out of home, and a complete visual overhaul of a 670-page website.",
+      images: [
+        "images/boltbillboard.jpg",
+        "images/boltbillboard2.jpg",
+        "images/boltenvirographics.jpg",
+        "images/boltebook.jpg",
+        "images/boltmobileweb.jpg",
+        "images/boltsocialmedia.jpg"
+      ]
+    },
+    kargo: {
+      title: "Kargo",
+      desc: "Tasked with a significant digital overhaul and repositioning of their website, along with day-to-day work across collateral, technical illustrations, event marketing materials, sales booth design, ebooks, sales decks, and other digital marketing materials for the supply chain space.",
+      images: [
+        "images/kargosignage.jpg",
+        "images/kargoappgif.gif",
+        "images/kargobusinesscards.jpg",
+        "images/kargosalesonepagers.jpg",
+        "images/kargostyleguide.jpg",
+        "images/kargostyleguideinterior.jpg",
+        "images/kargowebsitemobileview.jpg"
+      ]
+    },
+    ordergroove: {
+      title: "Ordergroove",
+      desc: "Tasked with an overhaul of Ordergroove's entire digital and print presence, including typography, website, color wheel expansion, and fresh approaches to collateral design: sales decks, signage, one-sheets, and other marketing materials.",
+      images: [
+        "images/ordergroovewebsite.jpg",
+        "images/ordergroovemobileweb.jpg",
+        "images/ordergroovemobileweb2.jpg",
+        "images/ordergroovebillboard.jpg",
+        "images/ordergroovekiosk.jpg",
+        "images/ordergroovebook.jpg",
+        "images/ordergroovesocialmedia.jpg"
+      ]
+    },
+    campaigns: {
+      title: "Campaigns & Digital",
+      desc: "Campaign, web, and app work, from a prosecco launch for Mad Fish to a student-athlete mental health campaign, the Sci Fi Cinema website, and the Pipspeak and MyFamiliar apps.",
+      images: [
+        "images/madfishbillboard.jpg",
+        "images/studentathleteposters.jpg",
+        "images/studentathletebillboard.jpg",
+        "images/scificinemawebsite.jpg",
+        "images/myfamiliarapp.jpg",
+        "images/pipspeakapp.jpg",
+        "images/pipspeakapp2.jpg"
+      ]
+    },
+    illustration: {
+      title: "Illustration",
+      desc: "Selected illustration, poster, and identity work, including award-winning pieces: Midsommar, Angkor Wat, and the Donate invitation.",
+      images: [
+        "images/donateinvitation.jpg",
+        "images/midsommarposter.jpg",
+        "images/angkorwatposter.jpg",
+        "images/haircomesthesunbranding.jpg",
+        "images/shakespearefestivalicons.jpg",
+        "images/tarotcards.jpg",
+        "images/avantgardegothicposter.jpg"
+      ]
+    }
+  };
+
+  const modal = document.getElementById("project-modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDesc = document.getElementById("modal-desc");
+  const carouselImage = document.getElementById("carousel-image");
+  const carouselDots = document.getElementById("carousel-dots");
+  const prevBtn = document.getElementById("carousel-prev");
+  const nextBtn = document.getElementById("carousel-next");
+  const closeBtn = document.getElementById("modal-close");
+
+  let currentImages = [];
+  let currentIndex = 0;
+
+  function renderDots() {
+    carouselDots.innerHTML = "";
+    currentImages.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.setAttribute("aria-label", "Go to image " + (i + 1));
+      if (i === currentIndex) dot.classList.add("active");
+      dot.addEventListener("click", () => showImage(i));
+      carouselDots.appendChild(dot);
+    });
+  }
+
+  function showImage(index) {
+    currentIndex = (index + currentImages.length) % currentImages.length;
+    carouselImage.src = currentImages[currentIndex];
+    renderDots();
+  }
+
+  function openModal(key) {
+    const project = projectData[key];
+    if (!project) return;
+    modalTitle.textContent = project.title;
+    modalDesc.innerHTML = "";
+    project.desc.split("\n\n").forEach((text) => {
+      const p = document.createElement("p");
+      p.textContent = text;
+      modalDesc.appendChild(p);
+    });
+    currentImages = project.images;
+    currentIndex = 0;
+    showImage(0);
+    const hasMultiple = currentImages.length > 1;
+    prevBtn.style.display = hasMultiple ? "flex" : "none";
+    nextBtn.style.display = hasMultiple ? "flex" : "none";
+    modal.hidden = false;
+    closeBtn.focus();
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".design-card").forEach((card) => {
+    card.addEventListener("click", () => openModal(card.dataset.project));
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+  nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (modal.hidden) return;
+    if (e.key === "Escape") closeModal();
+    if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+    if (e.key === "ArrowRight") showImage(currentIndex + 1);
+  });
+</script>
+
+<script>
+  // ---- Scroll-spy: highlights the nav item for whichever section
+  // ---- is currently in view, with a rootMargin that accounts for
+  // ---- the sticky header height.
+  const spySections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll(".site-nav a");
+
+  function setActiveNav(id) {
+    navLinks.forEach((link) => {
+      if (link.getAttribute("href") === "#" + id) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  const spyObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveNav(entry.target.id);
+        }
+      });
+    },
+    { rootMargin: "-110px 0px -60% 0px", threshold: 0 }
+  );
+
+  spySections.forEach((section) => spyObserver.observe(section));
+</script>
+
+</body>
+</html>
