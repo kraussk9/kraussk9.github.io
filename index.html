@@ -19,6 +19,7 @@
       <a href="#projects">Projects</a>
       <a href="#design">Design</a>
       <a href="#about">About</a>
+      <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -46,7 +47,7 @@
   <!-- ========== PROJECTS ========== -->
   <section id="projects">
     <div class="wrap">
-      <p class="section-eyebrow">Selected Work</p>
+      <p class="section-eyebrow">Projects</p>
 
       <div class="project-list">
 
@@ -149,7 +150,7 @@
   <!-- ========== DESIGN ========== -->
   <section id="design">
     <div class="wrap">
-      <p class="section-eyebrow">Design Work</p>
+      <p class="section-eyebrow">Design</p>
 
       <article class="design-card" data-project="bolt">
         <div class="media-frame">
@@ -359,10 +360,10 @@
     </div>
   </section>
 
-  <section>
+  <!-- ========== AWARDS ========== -->
+  <section id="awards">
     <div class="wrap">
-      <p class="section-eyebrow">Recognition</p>
-      <h2 class="section-title">Awards &amp; honors, 2021–2022</h2>
+      <p class="section-eyebrow">Awards</p>
       <ul class="recognition-list">
         <li>
           <span class="year">2022</span>
@@ -427,7 +428,7 @@
   <!-- ========== CONTACT ========== -->
   <section id="contact">
     <div class="wrap">
-      <p class="section-eyebrow">Get in touch</p>
+      <p class="section-eyebrow">Contact</p>
       <h2 class="section-title">Looking for an analyst who makes data legible? <span class="highlight">Let's talk!</span></h2>
       <ul class="contact-list">
         <li>
@@ -631,6 +632,15 @@
   // ---- the sticky header height.
   const spySections = document.querySelectorAll("main section[id]");
   const navLinks = document.querySelectorAll(".site-nav a");
+
+  // Keep anchor jumps flush with the sticky header so the section's
+  // top border tucks behind the header's instead of doubling up.
+  const siteHeader = document.querySelector(".site-header");
+  function syncHeaderHeight() {
+    document.documentElement.style.setProperty("--header-h", siteHeader.offsetHeight + "px");
+  }
+  syncHeaderHeight();
+  window.addEventListener("resize", syncHeaderHeight);
 
   function setActiveNav(id) {
     navLinks.forEach((link) => {
