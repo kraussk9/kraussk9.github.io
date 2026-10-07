@@ -109,6 +109,7 @@ img {
 
 .site-nav {
   display: flex;
+  align-self: stretch;
   gap: 32px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -118,7 +119,8 @@ img {
 
 .site-nav a {
   position: relative;
-  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
   color: var(--grey);
   transition: color 0.2s ease;
 }
@@ -133,7 +135,9 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  /* Drop past the header's 32px bottom padding so the underline
+     sits directly on the header's bottom border, no gap */
+  bottom: -33px;
   height: 2px;
   background: var(--lime);
 }
@@ -558,7 +562,8 @@ section + section {
   align-items: center;
 }
 
-.design-card:first-child {
+.design-card:first-child,
+.section-eyebrow + .design-card {
   border-top: none;
   padding-top: 0;
 }
@@ -660,7 +665,7 @@ section + section {
 
 /* Anchor offset so fixed/sticky headers (if added later) don't cover targets */
 main section[id] {
-  scroll-margin-top: 110px;
+  scroll-margin-top: calc(var(--header-h, 105px) - 1px);
 }
 
 /* ---------- Design cards as clickable triggers ---------- */
@@ -855,4 +860,12 @@ main section[id] {
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--grey);
+}
+
+/* Five nav items need tighter spacing to fit on phones */
+@media (max-width: 480px) {
+  .site-nav {
+    gap: 16px;
+    font-size: 12px;
+  }
 }
