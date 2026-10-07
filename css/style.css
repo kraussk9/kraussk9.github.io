@@ -668,6 +668,13 @@ main section[id] {
   scroll-margin-top: calc(var(--header-h, 105px) - 1px);
 }
 
+/* Contact is the last and shortest section. Without this, tall screens
+   run out of page before Contact reaches the header, leaving a gap
+   (a doubled line) and confusing the nav highlight. */
+#contact {
+  min-height: calc(100vh - var(--header-h, 105px));
+}
+
 /* ---------- Design cards as clickable triggers ---------- */
 
 .design-card {

@@ -628,8 +628,7 @@
 
 <script>
   // ---- Scroll-spy: highlights the nav item for whichever section
-  // ---- is currently in view, with a rootMargin that accounts for
-  // ---- the sticky header height.
+  // ---- is currently sitting under the sticky header.
   const spySections = document.querySelectorAll("main section[id]");
   const navLinks = document.querySelectorAll(".site-nav a");
 
@@ -652,18 +651,31 @@
     });
   }
 
-  const spyObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveNav(entry.target.id);
-        }
-      });
-    },
-    { rootMargin: "-110px 0px -60% 0px", threshold: 0 }
-  );
+  // The active section is the last one whose top has reached the
+  // bottom of the sticky header. At the very bottom of the page,
+  // the last section wins.
+  function updateActiveNav() {
+    const line = siteHeader.offsetHeight + 4;
+    let current = "";
+    spySections.forEach((section) => {
+      if (section.getBoundingClientRect().top <= line) current = section.id;
+    });
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    if (atBottom) current = spySections[spySections.length - 1].id;
+    setActiveNav(current);
+  }
 
-  spySections.forEach((section) => spyObserver.observe(section));
+  let spyTicking = false;
+  window.addEventListener("scroll", () => {
+    if (spyTicking) return;
+    spyTicking = true;
+    requestAnimationFrame(() => {
+      updateActiveNav();
+      spyTicking = false;
+    });
+  }, { passive: true });
+  window.addEventListener("resize", updateActiveNav);
+  updateActiveNav();
 </script>
 
 </body>
